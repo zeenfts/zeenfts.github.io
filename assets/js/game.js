@@ -19,14 +19,13 @@ function updateHealth(damage = 0) {
 function updateGame() {
     const state = gameStates[currentState];
     const gameText = document.getElementById('game-text');
-    const choicesDiv = document.getElementById('choices');
 
-    // Check for game over first
-    if (health <= 0) {
-        gameText.innerHTML = '<div class="game-over-screen">GAME OVER</div>';
-        choicesDiv.innerHTML = '<button onclick="resetGame()">Start New Game</button>';
-        return;
-    }
+    // // Check for game over first
+    // if (health <= 0) {
+    //     gameText.innerHTML = '<div class="game-over-screen">GAME OVER</div>';
+    //     choicesDiv.innerHTML = '<button onclick="resetGame()">Start New Game</button>';
+    //     return;
+    // }
     
     if (!state) {
         console.error('Invalid state:', currentState);
@@ -36,6 +35,8 @@ function updateGame() {
     // Update game text with appropriate styling
     if (state.isGameOver) {
         gameText.innerHTML = `<div class="game-over">${state.text}</div>`;
+        // gameText.innerHTML = '<div class="game-over-screen">GAME OVER</div>';
+        choicesDiv.innerHTML = '<button onclick="resetGame()">Start New Game</button>';
         attempts++;
         visited.clear();
         health = 100;
@@ -49,7 +50,7 @@ function updateGame() {
     }
     
     // Update choices
-    choicesDiv = document.getElementById('choices');
+    const choicesDiv = document.getElementById('choices');
     choicesDiv.innerHTML = '';
     
     state.choices.forEach(choice => {
