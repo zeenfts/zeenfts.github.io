@@ -1,6 +1,6 @@
 const gameStates = {
     start: {
-        text: "You stand before the legendary data vault, inspired by the mysterious Vault8 on Elmwood Trail. Three entrances beckon:\n\nA. The Neural Gateway\nB. The Statistical Nexus\nC. The Quantum Terminal",
+        text: "You stand before the legendary data vault, inspired by the mysterious Vault8 on Elmwood Trail. Three entrances beckon:",
         choices: [
             { text: "A. Enter the Neural Gateway", nextState: "neural1" },
             { text: "B. Access the Statistical Nexus", nextState: "stats1" },
@@ -70,7 +70,7 @@ const gameStates = {
         text: "Statistical Nexus - Level 1\nIn a normal distribution, what lies two steps from the mean?",
         choices: [
             { text: "A. 95% confidence interval", nextState: "statsWarn1" },
-            { text: "B. 2 standard deviations", nextState: "stats2" },
+            { text: "B. 2 standard deviations", nextState: "statsWarn1" },
             { text: "C. Z-score of 2", nextState: "statsWarn1" }
         ]
     },
@@ -81,13 +81,13 @@ const gameStates = {
         text: "Quantum Terminal - Level 1\nCalculate the quantum bit entropy:\n|ψ⟩ = α|0⟩ + β|1⟩, where α = β = 1/√2",
         choices: [
             { text: "A. 0", nextState: "quantumWarn1" },
-            { text: "B. 1", nextState: "quantum2" },
+            { text: "B. 1", nextState: "quantumWarn1" },
             { text: "C. 0.5", nextState: "quantumWarn1" }
         ]
     },
     // [Add 6 more quantum levels similarly]
 
-    // Warning and failure states
+    // Warning and failure states -------------------------------------------------------------------------------------------
     neuralWarn1: {
         text: "WARNING: Neural pattern mismatch detected. Recalibrating...",
         choices: [
@@ -96,10 +96,82 @@ const gameStates = {
         ],
         damage: 20
     },
-    // [Add more warning states]
+
+    neuralWarn2: {
+        text: "WARNING: Neural pattern mismatch detected. Recalibrating...",
+        choices: [
+            { text: "A. Return to start", nextState: "start" },
+            { text: "B. Try again", nextState: "neural2" }
+        ],
+        damage: 20
+    },
+
+    neuralWarn3: {
+        text: "WARNING: Neural pattern mismatch detected. Recalibrating...",
+        choices: [
+            { text: "A. Return to start", nextState: "start" },
+            { text: "B. Try again", nextState: "neural3" }
+        ],
+        damage: 20
+    },
+
+    neuralWarn4: {
+        text: "WARNING: Neural pattern mismatch detected. Recalibrating...",
+        choices: [
+            { text: "A. Return to start", nextState: "start" },
+            { text: "B. Try again", nextState: "neural4" }
+        ],
+        damage: 20
+    },
+
+    neuralWarn5: {
+        text: "WARNING: Neural pattern mismatch detected. Recalibrating...",
+        choices: [
+            { text: "A. Return to start", nextState: "start" },
+            { text: "B. Try again", nextState: "neural5" }
+        ],
+        damage: 20
+    },
+
+    neuralWarn6: {
+        text: "WARNING: Neural pattern mismatch detected. Recalibrating...",
+        choices: [
+            { text: "A. Return to start", nextState: "start" },
+            { text: "B. Try again", nextState: "neural6" }
+        ],
+        damage: 20
+    },
+
+    neuralFail: {
+        text: "WARNING: Neural pattern mismatch detected. Recalibrating...",
+        choices: [
+            { text: "A. Return to start", nextState: "start" },
+            { text: "B. Try again", nextState: "neural7" }
+        ],
+        damage: 20
+    },
+
+    quantumWarn1: {
+        text: "WARNING: Neural pattern mismatch detected. Recalibrating...",
+        choices: [
+            { text: "A. Return to start", nextState: "start" },
+            { text: "B. Try again", nextState: "quantum1" }
+        ],
+        damage: 20
+    },
+
+    statsWarn1: {
+        text: "WARNING: Neural pattern mismatch detected. Recalibrating...",
+        choices: [
+            { text: "A. Return to start", nextState: "start" },
+            { text: "B. Try again", nextState: "stats1" }
+        ],
+        damage: 20
+    },
+    // [Add more warning states] ----------------------------------------------------------------
 
     vault: {
-        text: "SUCCESS! The vault opens...\n\nYou've proven yourself worthy of the data within.\nFinal Access Code: DS_QUANTUM_ML_2024\n\nCongratulations, true Data Scientist!",
+        text: "SUCCESS! The vault opens...\n\nYou've proven yourself worthy of the data within.\nFinal Access Code: DS_QUANTUM_ML_2024\n\nCongratulations, true Data HERO!",
         choices: [
             { text: "Play Again", nextState: "start" }
         ],
