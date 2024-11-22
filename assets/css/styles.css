@@ -31,6 +31,43 @@ body {
     text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }
 
+.title-link {
+    color: #00ff00;
+    text-decoration: none;
+    transition: text-shadow 0.3s ease;
+}
+
+.title-link:hover {
+    text-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
+    text-decoration: none;
+}
+
+.website-link {
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.website-link a {
+    color: #ffffff;
+    font-size: 0.8em;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.website-link a:hover {
+    opacity: 1;
+}
+
+.game-over-screen {
+    color: #ff0000;
+    font-size: 2em;
+    text-align: center;
+    animation: pulse 2s infinite;
+    margin: 20px 0;
+}
+
 .story-intro {
     text-align: center;
     color: #00ff00;

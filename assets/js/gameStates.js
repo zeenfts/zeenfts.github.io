@@ -176,5 +176,13 @@ const gameStates = {
             { text: "Play Again", nextState: "start" }
         ],
         isSuccess: true
+    },
+
+    gameOver: {
+        text: "GAME OVER\nYour system integrity has reached critical levels.",
+        choices: [
+            { text: "Start New Game", nextState: "start" }
+        ],
+        isGameOver: true
     }
 };

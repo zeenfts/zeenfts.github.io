@@ -19,6 +19,14 @@ function updateHealth(damage = 0) {
 function updateGame() {
     const state = gameStates[currentState];
     const gameText = document.getElementById('game-text');
+    const choicesDiv = document.getElementById('choices');
+
+    // Check for game over first
+    if (health <= 0) {
+        gameText.innerHTML = '<div class="game-over-screen">GAME OVER</div>';
+        choicesDiv.innerHTML = '<button onclick="resetGame()">Start New Game</button>';
+        return;
+    }
     
     if (!state) {
         console.error('Invalid state:', currentState);
@@ -41,7 +49,7 @@ function updateGame() {
     }
     
     // Update choices
-    const choicesDiv = document.getElementById('choices');
+    choicesDiv = document.getElementById('choices');
     choicesDiv.innerHTML = '';
     
     state.choices.forEach(choice => {
@@ -67,6 +75,15 @@ function updateGame() {
     if (statsDiv) {
         statsDiv.innerHTML = `Attempts: ${attempts} | Rooms Explored: ${visited.size} | System Integrity: ${health}%`;
     }
+}
+
+// GameOver Function if the Health is Zero (5 attempts)
+function resetGame() {
+    currentState = 'start';
+    health = 100;
+    attempts++;
+    visited.clear();
+    updateGame();
 }
 
 // Initialize game when DOM is loaded
