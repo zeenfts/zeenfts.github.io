@@ -2,26 +2,23 @@
 layout: default
 title: Vast Data AI Vault Quest
 ---
-<head>
-    <meta charset='UTF-8'/>
-    <link rel='stylesheet' href='../assets/css/styles.css'>
-</head>
-<body>
-    <div class="game-container">
-        <h1 class="title">VAST DATA AI VAULT QUEST</h1>
-        <p class="inspiration">Inspired by Vault8 on an Elmwood Trail Game</p>
-        <div class="story-intro">
-            <p>In the digital labyrinth of data and algorithms, you stand before a legendary vault...</p>
-        </div>
-        <div id="health-container">
-            <div class="health-label">System Integrity:</div>
-            <div id="health-bar" class="health-bar">
-                <div id="health-fill" class="health-fill"></div>
-            </div>
-        </div>
-        <div id="game-text"></div>
-        <div id="choices" class="choices"></div>
-        <div id="stats" class="stats"></div>
+<div class="game-container">
+    <h1 class="title">VAST DATA AI VAULT QUEST</h1>
+    <p class="inspiration">Inspired by Vault8 on an Elmwood Trail Game</p>
+    <div class="story-intro">
+        <p>In the digital labyrinth of data and algorithms, you stand before a legendary vault...</p>
     </div>
-    <script src='../assets/js/gameStates.js'></script>
-</body>
+    <div id="health-container">
+        <div class="health-label">System Integrity:</div>
+        <div id="health-bar" class="health-bar">
+            <div id="health-fill" class="health-fill"></div>
+        </div>
+    </div>
+    <div id="game-text"></div>
+    <div id="choices" class="choices"></div>
+    <div id="stats" class="stats"></div>
+</div>
+
+<!-- Make sure to load gameStates first, then game logic -->
+<script src="{{ site.baseurl }}/assets/js/gameStates.js"></script>
+<script src="{{ site.baseurl }}/assets/js/game.js"></script>

@@ -9,6 +9,12 @@ theme: minima
 plugins:
   - jekyll-feed
 
+defaults:
+  - scope:
+      path: "assets/js"
+    values:
+      js: true
+
 exclude:
   - Gemfile
   - Gemfile.lock
