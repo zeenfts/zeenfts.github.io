@@ -1,0 +1,16 @@
+title: Vast Data AI Vault Quest
+description: A text-based maze game inspired by Vault8 on an Elmwood Trail Game
+baseurl: ""  # Changed from "/vault-quest" to "" for root domain
+url: "https://zeenfts.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
