@@ -5,6 +5,7 @@
   import Portfolio from '$lib/components/Portfolio.svelte';
   import Articles from '$lib/components/Articles.svelte';
   import Contact from '$lib/components/Contact.svelte';
+  import Footer from '$lib/components/Footer.svelte';
   import GameWidget from '$lib/components/GameWidget.svelte';
   import ChatWidget from '$lib/components/ChatWidget.svelte';
   // import ThemeToggle from '$lib/components/ThemeToggle.svelte';
@@ -23,6 +24,7 @@
     <Portfolio />
     <Articles />
     <Contact />
+    <Footer />
   </main>
   
   <!-- <ThemeToggle /> -->
