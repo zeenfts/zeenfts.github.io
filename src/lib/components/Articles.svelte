@@ -3,25 +3,39 @@
   
   const articles = [
     {
-      title: 'Building Interactive Games with Svelte',
-      date: '2024-01-15',
-      excerpt: 'Learn how to create engaging browser-based games using Svelte and modern web technologies.',
-      readTime: '5 min read',
-      link: '#'
-    },
-    {
-      title: 'The Art of Minimalist Web Design',
-      date: '2024-01-10',
-      excerpt: 'Exploring the principles of minimalist design in modern web development.',
-      readTime: '3 min read',
-      link: '#'
-    },
-    {
-      title: 'Full-Stack Development in 2024',
-      date: '2024-01-05',
-      excerpt: 'A comprehensive guide to modern full-stack development tools and practices.',
+      title: 'Singapore, Malaysia, & Vietnam: Tourist Attraction Itinerary Made Easy with Google Cloud Platform Places API',
+      date: '2024-07-22',
+      excerpt: 'A comprehensive guide to planning a tourist itinerary in Singapore, Malaysia, and Vietnam using Google Cloud Platform\'s Places API.',
       readTime: '8 min read',
-      link: '#'
+      link: 'https://medium.com/@imdifagama/singapore-malaysia-vietnam-tourist-attraction-itinerary-made-easy-with-google-cloud-platform-0f53b5f7b11d'
+    },
+    {
+      title: 'The Vision of Unlimited Learning: A Renaissance Dream for AI',
+      date: '2024-07-10',
+      excerpt: 'Exploring the potential of AI to revolutionize education and learning experiences.',
+      readTime: '4 min read',
+      link: 'https://medium.com/@imdifagama/the-vision-of-unlimited-learning-a-renaissance-dream-for-artificial-intelligence-ab3ee8ba496c'
+    },
+    {
+      title: 'Beautifully Draw Area Near the Capital City of each Province in Indonesia using Contextily',
+      date: '2024-06-13',
+      excerpt: 'A guide on how to visualize areas near the capital city of each province in Indonesia using Contextily in Python.',
+      readTime: '3 min read',
+      link: 'https://medium.com/@imdifagama/beautifully-know-area-near-the-capital-city-of-each-province-in-indonesia-using-contextily-in-98ddcd51a565'
+    },
+    {
+      title: 'Beginner Ways to Automate Your Python Function Loop Testing using Unittest',
+      date: '2024-04-27',
+      excerpt: 'A beginner-friendly guide to automating function loop testing in Python using the unittest framework.',
+      readTime: '6 min read',
+      link: 'https://medium.com/@imdifagama/beginner-ways-to-automate-your-python-function-loop-testing-using-unittest-08714b62b0ff'
+    },
+    {
+      title: 'Marketing Analysis using Recency, Frequency, Monetary (RFM) in Python',
+      date: '2020-08-07',
+      excerpt: 'An in-depth guide on how to perform marketing analysis using RFM metrics in Python for Quantium.',
+      readTime: '8 min read',
+      link: 'https://medium.com/@imdifagama/quantium-data-analytics-virtual-program-part-1-insidesherpa-3b45076c0cc5'
     }
   ];
   
