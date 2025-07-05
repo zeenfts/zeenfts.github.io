@@ -12,9 +12,12 @@
       { href: '#contact', label: 'contact' }
     ],
     social: [
-      { name: 'GitHub', url: 'https://github.com/yourusername' },
-      { name: 'LinkedIn', url: 'https://linkedin.com/in/yourusername' },
-      { name: 'Twitter', url: 'https://twitter.com/yourusername' }
+      { name: 'GitHub', url: 'https://github.com/zeenfts' },
+      { name: 'LinkedIn', url: 'https://linkedin.com/in/difagama' },
+      { name: 'Gmail', url: 'mailto:imdifagama@gmail.com' },
+      { name: 'Kaggle', url: 'https://www.kaggle.com/zeeniye' },
+      { name: 'Etsy', url: 'https://www.etsy.com/shop/tibreezarts' },
+      { name: 'Goodreads', url: 'https://www.goodreads.com/user/show/118784889-muhammad-d-ivanka' },
     ]
   };
   
@@ -27,12 +30,12 @@
 
 <footer class="bg-gray-100 dark:bg-gray-900 border-t dark:border-gray-800">
   <div class="max-width-container px-4 py-12">
-    <div class="grid md:grid-cols-3 gap-8">
+    <div class="grid px-7 md:grid-cols-3 gap-11">
       <!-- About Section -->
       <div>
-        <h3 class="font-bold text-lg mb-4">Your Name</h3>
+        <h3 class="font-bold text-lg mb-4">{$_('all.name')}</h3>
         <p class="text-gray-600 dark:text-gray-400 text-sm">
-          Full Stack Developer & Digital Artist crafting elegant solutions with code and creativity.
+          {$_('hero.description') || 'I am a Tech Enthusiast with a passion for creating innovative solutions.'}
         </p>
       </div>
       
