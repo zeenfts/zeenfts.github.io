@@ -24,7 +24,7 @@
   <div class="max-width-container pb-9">
     <div class="text-center">
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-        {$_('hero.greeting')} <span class="text-spring-accent">Muhammad Difagama Ivanka</span>
+        {$_('hero.greeting')} <span class="text-spring-accent">{$_('all.name')}</span>
       </h1>
       <p class="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8">
         {$_('hero.title')}
