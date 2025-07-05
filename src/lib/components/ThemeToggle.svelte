@@ -4,6 +4,7 @@
   
   let theme = 'winter';
   let isDark = false;
+  let currentLang = 'en';
   
   const themes = {
     light: ['winter', 'spring', 'summer', 'autumn'],
@@ -11,9 +12,8 @@
   };
   
   const languages = [
-    { code: 'en', name: 'English' },
-    { code: 'es', name: 'Español' },
-    { code: 'fr', name: 'Français' }
+    { code: 'en', name: 'English', flag: '🇬🇧' },
+    { code: 'id', name: 'Bahasa Indonesia', flag: '🇮🇩' }
   ];
   
   function toggleTheme() {
@@ -35,18 +35,30 @@
       root.style.setProperty('--primary', isDark ? '#1A365D' : '#E6F2FF');
     }
     // Add more season-specific styles
+    
+    // Save theme preference
+    localStorage.setItem('theme', isDark ? `${theme}-dark` : theme);
   }
   
   function changeLanguage(lang) {
+    currentLang = lang;
     locale.set(lang);
+    localStorage.setItem('language', lang);
   }
   
   onMount(() => {
+    // Load saved theme
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
       isDark = savedTheme.includes('dark');
       theme = savedTheme.replace('-dark', '');
     }
+    
+    // Load saved language
+    const savedLang = localStorage.getItem('language') || 'en';
+    currentLang = savedLang;
+    locale.set(savedLang);
+    
     updateTheme();
   });
 </script>
@@ -57,6 +69,7 @@
     <button
       on:click={toggleTheme}
       class="p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+      title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
     >
       {#if isDark}
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,13 +99,18 @@
   
   <!-- Language Selector -->
   <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-2">
-    <select 
-      on:change={(e) => changeLanguage(e.target.value)}
-      class="bg-transparent text-sm focus:outline-none"
-    >
+    <div class="space-y-1">
       {#each languages as lang}
-        <option value={lang.code}>{lang.name}</option>
+        <button
+          on:click={() => changeLanguage(lang.code)}
+          class={`w-full text-left px-2 py-1 rounded text-sm flex items-center space-x-2 ${
+            currentLang === lang.code ? 'bg-gray-200 dark:bg-gray-700' : 'hover:bg-gray-100 dark:hover:bg-gray-700'
+          }`}
+        >
+          <span>{lang.flag}</span>
+          <span>{lang.name}</span>
+        </button>
       {/each}
-    </select>
+    </div>
   </div>
 </div>

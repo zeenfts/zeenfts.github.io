@@ -6,27 +6,49 @@
   body {
     @apply transition-colors duration-300;
   }
-  
-  /* Custom scrollbar */
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    @apply bg-gray-100 dark:bg-gray-800;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    @apply bg-gray-400 dark:bg-gray-600 rounded-full;
-  }
 }
 
 @layer components {
-  .section-padding {
-    @apply px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20;
+  /* Your quiz game specific styles */
+  .game-container {
+    @apply bg-black p-8 border-2 border-green-500 rounded-lg shadow-lg;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
   }
-  
-  .max-width-container {
-    @apply max-w-7xl mx-auto;
+
+  .game-text {
+    @apply min-h-[100px] whitespace-pre-line p-5 border border-green-500 rounded-lg my-5;
+  }
+
+  .game-button {
+    @apply bg-black text-green-500 border border-green-500 px-5 py-2 rounded;
+    @apply hover:bg-green-500 hover:text-black transition-all;
+    @apply w-full text-left font-mono;
+  }
+
+  .health-bar {
+    @apply bg-gray-800 border border-green-500 h-5 rounded-full overflow-hidden;
+  }
+
+  .health-fill {
+    @apply h-full transition-all duration-300;
+  }
+
+  /* Animations from your original CSS */
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  @keyframes glow {
+    0%, 100% { text-shadow: 0 0 5px #00ff00; }
+    50% { text-shadow: 0 0 20px #00ff00; }
+  }
+
+  .warning {
+    animation: pulse 2s infinite;
+  }
+
+  .success {
+    animation: glow 2s infinite;
   }
 }
