@@ -4,25 +4,15 @@
   "portfolio": "Portofolio",
   "articles": "Artikel",
   "contact": "Kontak",
-  "hero": {
-    "greeting": "Halo, saya",
-    "title": "Pengembang Full Stack & Seniman Digital",
-    "description": "Menciptakan solusi elegan dengan kode dan kreativitas"
-  },
-  "about": {
-    "title": "Tentang Saya",
-    "description": "Saya adalah pengembang yang bersemangat yang percaya pada perpaduan teknologi dan seni. Dengan keahlian dalam teknologi web modern, saya menciptakan pengalaman digital yang fungsional dan indah."
-  },
-  "portfolio": {
-    "title": "Proyek Unggulan"
-  },
-  "articles": {
-    "title": "Artikel Terbaru"
-  },
-  "contact": {
-    "title": "Hubungi Saya",
-    "name": "Nama",
-    "email": "Email",
-    "message": "Pesan"
-  }
+  "hero_greeting": "Halo, saya",
+  "hero_title": "Pengembang Full Stack & Seniman Digital",
+  "hero_description": "Menciptakan solusi elegan dengan kode dan kreativitas",
+  "about_title": "Tentang Saya",
+  "about_description": "Seorang Manusia. Suka memaksimalkan Insight Data dengan AI.",
+  "portfolio_title": "Proyek Unggulan",
+  "articles_title": "Artikel Terbaru",
+  "contact_title": "Hubungi Saya",
+  "contact_name": "Nama",
+  "contact_email": "Email",
+  "contact_message": "Pesan"
 }

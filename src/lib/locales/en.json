@@ -4,25 +4,15 @@
   "portfolio": "Portfolio",
   "articles": "Articles",
   "contact": "Contact",
-  "hero": {
-    "greeting": "Hello, I'm",
-    "title": "Full Stack Developer & Digital Artist",
-    "description": "Crafting elegant solutions with code and creativity"
-  },
-  "about": {
-    "title": "About Me",
-    "description": "I'm a passionate developer who believes in the intersection of technology and art. With expertise in modern web technologies, I create digital experiences that are both functional and beautiful."
-  },
-  "portfolio": {
-    "title": "Featured Projects"
-  },
-  "articles": {
-    "title": "Recent Articles"
-  },
-  "contact": {
-    "title": "Get In Touch",
-    "name": "Name",
-    "email": "Email",
-    "message": "Message"
-  }
+  "hero_greeting": "Hello, I'm",
+  "hero_title": "Full Stack Developer & Digital Artist",
+  "hero_description": "Crafting elegant solutions with code and creativity",
+  "about_title": "About Me",
+  "about_description": "A Human. Love to Nurture Data behind so called AI.",
+  "portfolio_title": "Featured Projects",
+  "articles_title": "Recent Articles",
+  "contact_title": "Get In Touch",
+  "contact_name": "Name",
+  "contact_email": "Email",
+  "contact_message": "Message"
 }
