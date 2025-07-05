@@ -1,25 +1,27 @@
 {
-  "name": "personal-portfolio",
-  "version": "1.0.0",
-  "type": "module",
+  "name": "vast-data-vault-quest",
+  "version": "2.0.0",
+  "private": true,
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && npx gh-pages -d build -t true"
+    "deploy": "npm run build && touch build/.nojekyll && gh-pages -d build -t true"
   },
+  "type": "module",
   "devDependencies": {
     "@sveltejs/adapter-static": "^2.0.3",
     "@sveltejs/kit": "^1.27.0",
+    "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.16",
+    "gh-pages": "^6.0.0",
     "postcss": "^8.4.31",
     "svelte": "^4.2.0",
+    "svelte-preprocess": "^5.1.0",
     "tailwindcss": "^3.3.5",
     "vite": "^4.5.0"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.5.10",
-    "svelte-i18n": "^3.7.4",
-    "gh-pages": "^6.0.0"
+    "svelte-i18n": "^3.7.4"
   }
 }
