@@ -35,18 +35,32 @@
     updateTheme();
   }
   
-  function setSeasonTheme(season) {
-    theme = season;
-    updateTheme();
+function setSeasonTheme(season) {
+  theme = season;
+  updateTheme();
+}
+
+function updateTheme() {
+  const root = document.documentElement;
+  
+  // Remove all theme classes
+  root.className = root.className.replace(/\b(winter|spring|summer|autumn)\b/g, '');
+  
+  // Add current theme class
+  root.classList.add(theme);
+  
+  // Handle dark mode
+  if (isDark) {
+    root.classList.add('dark');
+  } else {
+    root.classList.remove('dark');
   }
   
-  function updateTheme() {
-    const root = document.documentElement;
-    root.classList.toggle('dark', isDark);
-    localStorage.setItem('theme', isDark ? `${theme}-dark` : theme);
-    localStorage.setItem('isDark', isDark);
-  }
-  
+  // Save preferences
+  localStorage.setItem('theme', theme);
+  localStorage.setItem('isDark', isDark);
+}
+
   function changeLanguage(lang) {
     currentLang = lang;
     locale.set(lang);
@@ -93,7 +107,7 @@
         <!-- Season Selector -->
         <select 
           bind:value={theme}
-          on:change={() => updateTheme()}
+          on:change={(e) => setSeasonTheme(e.target.value)}
           class="text-sm px-2 py-1 rounded border dark:bg-gray-800 dark:border-gray-700"
         >
           {#each themes as season}
