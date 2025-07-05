@@ -2,21 +2,13 @@
   import { _ } from 'svelte-i18n';
 </script>
 
-<section id="about" class="section-padding bg-gray-50 dark:bg-gray-800 px-7">
-  <div class="max-width-container">
-    <h2 class="text-3xl font-bold text-center py-2 mt-3">{`A Human. Love to Nurture Data behind so called AI.` || $_('about.title')}</h2>
+<section id="about" class="section-padding bg-gray-50 dark:bg-gray-800">
+  <div class="max-width-container px-7 py-9">
+    <h2 class="text-3xl font-bold text-center pb-7">{$_('about.title') || 'About'}</h2>
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <div>
         <p class="text-lg mb-6">
-          {`
-          AI & Data Addict with approximately a year of Professional experience 
-          and more than two years on related projects through my days as student.
-           Focused more on the Data Quality, Data Governance, and Metadata Management.
-            But also able to do end to end of data analysis or data science process ranging from
-             Database Query, Reporting, Machine Learning, Deep Learning, etc.
-              Hold Microsoft Azure Certified Fundamentals for Cloud, Artificial Intelligence, and Data field.
-               Furthermore, also familiar quite a bit with
-                Google Cloud Platform (GCP), Airflow, DBT, Kafka, SQL Server Management, & Data Architecture.`|| $_('about.description')}
+          {$_('about.description')}
         </p>
         <div class="space-y-4">
           <div>

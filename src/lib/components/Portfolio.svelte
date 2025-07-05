@@ -25,10 +25,10 @@
 </script>
 
 <section id="portfolio" class="section-padding">
-  <div class="max-width-container px-7">
-    <h2 class="text-3xl font-bold text-center mb-12">{'See through some of my Portfolios' || $_('portfolio.title')}</h2>
+  <div class="max-width-container px-7 py-12">
+    <h2 class="text-3xl font-bold text-center mb-12">{$_('portfolio.title') || 'Portfolios'}</h2>
     
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
       {#each projects as project}
         <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
           <div class="p-6">

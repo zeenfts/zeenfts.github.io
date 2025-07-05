@@ -7,7 +7,7 @@
   import Contact from '$lib/components/Contact.svelte';
   import GameWidget from '$lib/components/GameWidget.svelte';
   import ChatWidget from '$lib/components/ChatWidget.svelte';
-  import ThemeToggle from '$lib/components/ThemeToggle.svelte';
+  // import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 </script>
 
 <svelte:head>
@@ -25,7 +25,7 @@
     <Contact />
   </main>
   
-  <ThemeToggle />
+  <!-- <ThemeToggle /> -->
   <GameWidget />
   <ChatWidget />
 </div>

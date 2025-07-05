@@ -27,15 +27,15 @@
   }
 </script>
 
-<section id="contact" class="section-padding">
-  <div class="max-width-container mt-10">
+<section id="contact" class="section-padding py-7 px-7">
+  <div class="max-width-container">
     <h2 class="text-3xl font-bold text-center mb-12">{$_('contact.title') || 'Get In Touch'}</h2>
     
     <div class="max-w-2xl mx-auto">
       <form on:submit={handleSubmit} class="space-y-6">
         <div>
           <label for="name" class="block text-sm font-medium mb-2">
-            {'Name' || $_('contact.name')}
+            {$_('contact.name') || 'Name'}
           </label>
           <input
             type="text"
