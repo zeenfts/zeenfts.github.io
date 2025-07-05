@@ -63,7 +63,7 @@
   });
 </script>
 
-<div class="fixed top-20 right-4 z-40 space-y-2">
+<div class="fixed top-20 right-4 z-40 space-y-2 pr-7">
   <!-- Theme Toggle -->
   <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-2">
     <button

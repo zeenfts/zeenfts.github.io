@@ -25,8 +25,8 @@
 </script>
 
 <section id="portfolio" class="section-padding">
-  <div class="max-width-container">
-    <h2 class="text-3xl font-bold text-center mb-12">{$_('portfolio.title') || 'Portfolio'}</h2>
+  <div class="max-width-container px-7">
+    <h2 class="text-3xl font-bold text-center mb-12">{'See through some of my Portfolios' || $_('portfolio.title')}</h2>
     
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       {#each projects as project}

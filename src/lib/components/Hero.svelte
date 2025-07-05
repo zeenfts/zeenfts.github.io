@@ -2,8 +2,8 @@
   import { _ } from 'svelte-i18n';
   
   const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com/yourusername', icon: 'github' },
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/yourusername', icon: 'linkedin' },
+    { name: 'GitHub', url: 'https://github.com/zeenfts', icon: 'github' },
+    { name: 'LinkedIn', url: 'https://linkedin.com/in/difagama', icon: 'linkedin' },
     { name: 'Twitter', url: 'https://twitter.com/yourusername', icon: 'twitter' }
   ];
 </script>
@@ -12,7 +12,7 @@
   <div class="max-width-container">
     <div class="text-center">
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-        {$_('hero.greeting')} <span class="text-spring-accent">Your Name</span>
+        {$_('hero.greeting')} <span class="text-spring-accent">Muhammad Difagama Ivanka</span>
       </h1>
       <p class="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8">
         {$_('hero.title')}

@@ -21,8 +21,8 @@
 
 <nav class="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm z-50 shadow-sm">
   <div class="max-width-container">
-    <div class="flex justify-between items-center h-16">
-      <a href="/" class="font-bold text-xl">Your Name</a>
+    <div class="flex justify-between items-center h-16 px-7">
+      <a href="/" class="font-bold text-xl">IMDFGM</a>
       
       <!-- Desktop Menu -->
       <div class="hidden md:flex space-x-8">
