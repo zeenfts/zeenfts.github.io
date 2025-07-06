@@ -1,5 +1,8 @@
 {
-  "all.name": "Muhammad Difagama Ivanka",
+  "all":{
+    "name": "Muhammad Difagama Ivanka",
+    "myurl": "https://www.difagama.pro"
+  },
   "home": "Home",
   "about": "About",
   "portfolio": "Portfolio",

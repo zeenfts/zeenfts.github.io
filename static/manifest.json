@@ -1,0 +1,21 @@
+{
+  "name": "Muhammad Difagama Ivanka",
+  "short_name": "IMDFGM",
+  "description": "AI & Data Specialist",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#C6F6D5",
+  "background_color": "#F0FDF4",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "500x500",
+      "type": "image/svg"
+    }
+  ]
+}

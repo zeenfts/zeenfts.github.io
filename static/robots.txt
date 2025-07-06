@@ -1,0 +1,73 @@
+# Quite Strict
+User-agent: *
+
+# Development and build directories
+Disallow: /.github/
+Disallow: /.svelte-kit/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /.git/
+
+# Config files that shouldn't be accessible
+Disallow: /*.config.js
+Disallow: /*.config.ts
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /tsconfig.json
+Disallow: /.env
+Disallow: /.env.*
+Disallow: /.*
+
+# Common sensitive patterns
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /backup/
+Disallow: /config/
+
+# File patterns
+Disallow: /*.log
+Disallow: /*.sql
+Disallow: /*.sqlite
+Disallow: /*.db
+Disallow: /*.bak
+Disallow: /*.backup
+Disallow: /*.old
+Disallow: /*.orig
+Disallow: /*.save
+Disallow: /*.swp
+Disallow: /*.lock
+
+# Build artifacts
+Disallow: /build/
+Disallow: /dist/
+Disallow: /.vercel/
+Disallow: /.netlify/
+
+# Allow necessary files
+Allow: /
+Allow: /sitemap.xml
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+
+Crawl-delay: 1
+
+# Block bad bots (expanded list)
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: DotBot
+User-agent: MJ12bot
+User-agent: PetalBot
+User-agent: BLEXBot
+User-agent: Yandex
+Disallow: /
+
+Sitemap: https://www.difagama.pro/sitemap.xml

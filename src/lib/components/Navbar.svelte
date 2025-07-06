@@ -83,7 +83,9 @@ function updateTheme() {
   });
 </script>
 
-<nav class="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm z-50 shadow-sm">
+<nav class="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm z-50 shadow-sm"
+  aria-label="Main Navigation"
+>
   <div class="max-width-container px-4">
     <div class="flex justify-between items-center h-16">
       <!-- Logo/Name -->
@@ -166,6 +168,8 @@ function updateTheme() {
       <button 
         class="md:hidden"
         on:click={() => isMenuOpen = !isMenuOpen}
+        aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+        aria-expanded={isMenuOpen}
       >
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           {#if isMenuOpen}
@@ -194,7 +198,7 @@ function updateTheme() {
         <div class="pt-4 border-t dark:border-gray-700 space-y-3">
           <!-- Theme Controls -->
           <div class="flex items-center justify-between">
-            <span class="text-sm">Theme:</span>
+            <!-- <span class="text-sm">Theme:</span> -->
             <select 
               bind:value={theme}
               on:change={() => updateTheme()}
@@ -208,7 +212,7 @@ function updateTheme() {
           
           <!-- Dark Mode Toggle -->
           <div class="flex items-center justify-between">
-            <span class="text-sm">Dark Mode:</span>
+            <!-- <span class="text-sm">Dark Mode:</span> -->
             <button
               on:click={toggleTheme}
               class="p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
@@ -227,7 +231,7 @@ function updateTheme() {
           
           <!-- Language Selector -->
           <div class="flex items-center justify-between">
-            <span class="text-sm">Language:</span>
+            <!-- <span class="text-sm">Language:</span> -->
             <div class="flex space-x-1">
               {#each languages as lang}
                 <button

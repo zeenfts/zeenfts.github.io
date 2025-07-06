@@ -2,8 +2,36 @@
 <html lang="%lang%" class="%theme%">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%sveltekit.assets%/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="%sveltekit.meta.description%" />
+    <meta name="keywords" content="%sveltekit.meta.keywords%" />
+    <meta name="author" content="Difagama" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="%sveltekit.meta.url%" />
+    <meta property="og:title" content="%sveltekit.meta.title%" />
+    <meta property="og:description" content="%sveltekit.meta.description%" />
+    <meta property="og:image" content="%sveltekit.meta.image%" />
+    
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="%sveltekit.meta.url%" />
+    <meta property="twitter:title" content="%sveltekit.meta.title%" />
+    <meta property="twitter:description" content="%sveltekit.meta.description%" />
+    <meta property="twitter:image" content="%sveltekit.meta.image%" />
+    
+    <!-- Favicon variations -->
+    <link rel="icon" type="image/svg+xml" href="%sveltekit.assets%/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%sveltekit.assets%/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%sveltekit.assets%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%sveltekit.assets%/favicon-16x16.png" />
+
+    <link rel="manifest" href="%sveltekit.assets%/manifest.json" />
+    
     %sveltekit.head%
   </head>
   <body data-sveltekit-preload-data="hover" class="transition-colors duration-300">
