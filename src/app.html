@@ -23,6 +23,13 @@
     <meta property="twitter:title" content="%sveltekit.meta.title%" />
     <meta property="twitter:description" content="%sveltekit.meta.description%" />
     <meta property="twitter:image" content="%sveltekit.meta.image%" />
+
+    <!-- Quite Strict -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), accelerometer=(), gyroscope=()" />
     
     <!-- Favicon variations -->
     <link rel="icon" type="image/svg+xml" href="%sveltekit.assets%/favicon.svg" />

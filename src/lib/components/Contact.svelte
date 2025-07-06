@@ -9,10 +9,19 @@
   
   let isSubmitting = false;
   let submitMessage = '';
+  let lastSubmit = 0;
+  const RATE_LIMIT = 60000; // 1 minute
   
   async function handleSubmit(e) {
     e.preventDefault();
+    const now = Date.now();
     isSubmitting = true;
+
+    if (now - lastSubmit < RATE_LIMIT) {
+      alert('Please wait before submitting again');
+      return;
+    }
+    lastSubmit = now;
     
     // Simulate form submission
     setTimeout(() => {

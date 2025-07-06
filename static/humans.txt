@@ -1,0 +1,10 @@
+/* TEAM */
+Author: Muhammad Difagama Ivanka
+Site: https://www.difagama.pro
+
+/* SITE */
+Last update: 2025-07
+Standards: HTML5, CSS3, JavaScript
+Components: SvelteKit, TailwindCSS
+Software: Text Editor
+Security: HTTPS, CSP, SRI, HSTS
