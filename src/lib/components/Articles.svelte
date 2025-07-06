@@ -57,7 +57,7 @@
           </div>
           
           <h3 class="text-xl font-semibold mb-3">
-            <a href={article.link} class="hover:text-spring-accent transition-colors">
+            <a href={article.link} class="hover:text-spring-accent transition-colors" target="_blank">
               {article.title}
             </a>
           </h3>
@@ -69,6 +69,7 @@
           <a 
             href={article.link} 
             class="inline-flex items-center text-spring-accent hover:text-spring-dark transition-colors"
+            target="_blank"
           >
             Read More
             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
