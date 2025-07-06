@@ -1,10 +1,37 @@
-.DS_Store
+# These should never be committed or deployed
+.env
+.env.*
+.env.local
+.env.production
+!.env.example
+secrets/
+private/
+*.key
+*.pem
+*.cert
+
+# Build directories
+.svelte-kit/
+node_modules/
 node_modules
+build/
+dist/
 /build
 /.svelte-kit
 /package
-.env
-.env.*
-!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Logs
+*.log
+logs/
+npm-debug.log*
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# OS files
+.DS_Store
+Thumbs.db
