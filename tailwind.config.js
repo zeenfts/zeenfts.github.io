@@ -31,6 +31,13 @@ export default {
     }
   },
   plugins: [
-    require('@tailwindcss/typography')
+    require('@tailwindcss/typography'),
+    // Custom plugin for theme variants
+    function({ addVariant }) {
+      addVariant('winter', '.winter &');
+      addVariant('spring', '.spring &');
+      addVariant('summer', '.summer &');
+      addVariant('autumn', '.autumn &');
+    }
   ]
 };
