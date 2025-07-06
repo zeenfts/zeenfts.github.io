@@ -49,7 +49,7 @@
   </button>
   
   {#if isOpen}
-    <div class="absolute bottom-16 left-0 w-80 sm:w-96 bg-black border-2 border-green-500 rounded-lg shadow-2xl p-4">
+    <div class="absolute bottom-20 left-0 w-80 sm:w-96 bg-black border-2 border-green-500 rounded-lg shadow-2xl p-4">
       <div class="flex justify-between items-center mb-4">
         <h3 class="text-green-500 font-mono">VAST DATA AI VAULT QUEST</h3>
         <button 

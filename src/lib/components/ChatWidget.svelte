@@ -65,7 +65,7 @@
   </button>
   
   {#if isOpen}
-    <div class="absolute bottom-16 right-0 w-80 sm:w-96 bg-white dark:bg-gray-800 rounded-lg shadow-2xl flex flex-col h-96">
+    <div class="absolute bottom-20 right-0 w-80 sm:w-96 bg-white dark:bg-gray-800 rounded-lg shadow-2xl flex flex-col h-96">
       <div class="flex justify-between items-center p-4 border-b dark:border-gray-700">
         <h3 class="font-semibold">Chat Assistant</h3>
         <button 
