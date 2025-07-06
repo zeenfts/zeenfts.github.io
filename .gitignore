@@ -1,26 +1,25 @@
-# These should never be committed or deployed
+# Environment files
 .env
 .env.*
-.env.local
-.env.production
 !.env.example
+
+# Secrets (never commit these)
 secrets/
 private/
 *.key
 *.pem
 *.cert
 
-# Build directories
-.svelte-kit/
+# Dependencies
 node_modules/
-node_modules
+
+# Build outputs
 build/
 dist/
-/build
-/.svelte-kit
-/package
+.svelte-kit/
+package/
 
-# IDE
+# IDE files
 .vscode/
 .idea/
 *.code-workspace
