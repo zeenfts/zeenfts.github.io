@@ -31,7 +31,18 @@ jobs:
         run: npm ci
         
       - name: Build
-        run: npm run build
+        run: |
+          echo "Building site..."
+          npm run build
+          echo "Build complete. Checking build directory..."
+          ls -la
+          echo "Contents of build directory:"
+          ls -la build/
+          echo "Tree of build directory:"
+          find build -type f -name "*.html" | head -20
+          
+      - name: Create .nojekyll
+        run: touch build/.nojekyll
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
