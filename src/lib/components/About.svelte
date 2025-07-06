@@ -24,7 +24,7 @@
           <div>
             <h3 class="font-semibold mb-2">Backend</h3>
             <div class="flex flex-wrap gap-2">
-              {#each ['Node.js', 'Express', 'Python', 'PostgreSQL'] as skill}
+              {#each ['Node.js', 'Hapi', 'Python', 'PostgreSQL'] as skill}
                 <span class="px-3 py-1 bg-summer-secondary dark:bg-summer-dark rounded-full text-sm">
                   {skill}
                 </span>
@@ -47,7 +47,12 @@
         </div>
       </div>
       <div class="relative">
-        <div class="aspect-square bg-gradient-to-br from-spring-accent to-summer-accent rounded-lg"></div>
+        <div class="aspect-square bg-gradient-to-br
+        winter:from-summer-secondary winter:to-winter-accent
+        spring:from-autumn-secondary spring:to-spring-accent
+        summer:from-winter-secondary summer:to-summer-accent
+        autumn:from-spring-secondary autumn:to-autumn-accent
+        rounded-lg"></div>
       </div>
     </div>
   </div>

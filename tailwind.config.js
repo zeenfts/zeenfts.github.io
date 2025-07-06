@@ -17,16 +17,20 @@ export default {
         'spring-dark': '#22543D',
         
         // Summer theme
-        'summer-primary': '#FFFAF0',
-        'summer-secondary': '#FED7AA',
-        'summer-accent': '#FB923C',
-        'summer-dark': '#7C2D12',
+        // 'summer-primary': '#FFF5F5',
+        // 'summer-secondary': '#FED7E2', 
+        // 'summer-accent': '#F56565',
+        // 'summer-dark': '#742A2A',
+        'summer-primary': '#FFF5F7', 
+        'summer-secondary': '#FBB6CE', 
+        'summer-accent': '#E53E3E', 
+        'summer-dark': '#822727',       
         
         // Autumn theme
-        'autumn-primary': '#FEF3E7',
-        'autumn-secondary': '#FBBF24',
-        'autumn-accent': '#F59E0B',
-        'autumn-dark': '#78350F'
+        'autumn-primary': '#FFFAF0',
+        'autumn-secondary': '#FED7AA',
+        'autumn-accent': '#FB923C',
+        'autumn-dark': '#BD6D0C'
       }
     }
   },
