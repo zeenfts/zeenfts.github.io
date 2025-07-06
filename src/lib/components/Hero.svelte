@@ -24,7 +24,11 @@
   <div class="max-width-container pb-9">
     <div class="text-center">
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-        {$_('hero.greeting')} <span class="text-spring-accent">{$_('all.name')}</span>
+        {$_('hero.greeting')} <span class="
+        winter:text-winter-accent spring:text-spring-accent summer:text-summer-accent autumn:text-autumn-accent
+        dark:winter:text-winter-secondary dark:spring:text-spring-secondary
+        dark:summer:text-summer-secondary dark:autumn:text-autumn-secondary"
+        >{$_('all.name')}</span>
       </h1>
       <p class="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8">
         {$_('hero.title')}
@@ -40,7 +44,15 @@
             href={link.url} 
             target="_blank" 
             rel="noopener noreferrer"
-            class="text-gray-700 dark:text-gray-200 hover:text-spring-accent transition-colors"
+            class="text-gray-500 dark:text-gray-200 transition-colors
+            winter:hover:text-winter-accent
+            spring:hover:text-spring-accent
+            summer:hover:text-summer-accent
+            autumn:hover:text-autumn-accent
+            dark:winter:hover:text-winter-secondary
+            dark:spring:hover:text-spring-secondary
+            dark:summer:hover:text-summer-secondary
+            dark:autumn:hover:text-autumn-secondary"
           >
             <span class="sr-only">{link.name}</span>
             <!-- Add SVG icons here -->
