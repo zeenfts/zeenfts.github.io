@@ -6,5 +6,11 @@ export default defineConfig({
   server: {
     port: 3000,
     host: true
+  },
+  optimizeDeps: {
+    include: ['intl-messageformat', '@formatjs/icu-messageformat-parser']
+  },
+  ssr: {
+    noExternal: ['svelte-i18n', 'intl-messageformat', '@formatjs/icu-messageformat-parser']
   }
 });

@@ -7,12 +7,12 @@ export default {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: null,
+      fallback: 'index.html', // Changed from null to handle client-side routing
       precompress: false,
       strict: true
     }),
     paths: {
-      base: process.env.NODE_ENV === 'production' ? '' : ''
+      base: ''
     }
   }
 };
