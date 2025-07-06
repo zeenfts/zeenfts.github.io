@@ -76,14 +76,24 @@
           <button
             type="submit"
             disabled={isSubmitting}
-            class="px-8 py-3 bg-spring-accent text-white rounded-lg hover:bg-spring-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            class="px-8 py-3
+            winter:bg-winter-accent hover:winter:bg-winter-dark dark:winter:hover:bg-winter-primary
+            spring:bg-spring-accent hover:spring:bg-spring-dark dark:spring:hover:bg-spring-primary
+            summer:bg-summer-accent hover:summer:bg-summer-dark dark:summer:hover:bg-summer-primary
+            autumn:bg-autumn-accent hover:autumn:bg-autumn-dark dark:autumn:hover:bg-autumn-primary
+            text-white dark:hover:text-gray-800 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isSubmitting ? 'Sending...' : 'Send Message'}
           </button>
         </div>
         
         {#if submitMessage}
-          <p class="text-center text-green-600 dark:text-green-400">
+          <p class="text-center
+          winter:text-winter-accent dark:winter:text-winter-secondary
+          spring:text-spring-accent dark:spring:text-spring-secondary
+          summer:text-summer-accent dark:summer:text-summer-secondary
+          autumn:text-autumn-accent dark:autumn:text-autumn-secondary
+          mt-4 text-sm">
             {submitMessage}
           </p>
         {/if}
