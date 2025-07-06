@@ -8,6 +8,54 @@
   }
 }
 
+/* Modern, elegant sans-serif stack */
+body, .font-sans {
+  font-family: 
+    'Inter',                    /* Modern, clean - if installed */
+    -apple-system,              /* San Francisco on Mac/iOS */
+    'Segoe UI',                 /* Windows modern font */
+    'Roboto',                   /* Android/Material Design */
+    'Helvetica Neue',           /* Modern Helvetica */
+    'Noto Sans',                /* Google's universal font */
+    'Liberation Sans',          /* Linux modern font */
+    'Arial',                    /* Fallback */
+    sans-serif,                 /* Generic fallback */
+    'Apple Color Emoji',        /* Emoji support */
+    'Segoe UI Emoji',
+    'Noto Color Emoji';
+}
+
+/* Modern monospace stack for code */
+code, pre, .font-mono {
+  font-family: 
+    'Cascadia Code',            /* Microsoft's modern coding font */
+    'SF Mono',                  /* macOS modern mono */
+    'Fira Code',                /* Popular coding font */
+    'JetBrains Mono',           /* JetBrains modern mono */
+    'Roboto Mono',              /* Google's mono */
+    'Ubuntu Mono',              /* Ubuntu's clean mono */
+    'Monaco',                   /* macOS classic */
+    'Consolas',                 /* Windows modern mono */
+    'Liberation Mono',          /* Linux */
+    'Courier New',              /* Classic fallback */
+    monospace;                  /* Generic fallback */
+}
+
+/* Optional: Define font weights for better rendering */
+body {
+  font-weight: 400;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headers can use slightly different weight */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
 @layer components {
   /* Your quiz game specific styles */
   .game-container {
