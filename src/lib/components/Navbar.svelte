@@ -112,19 +112,16 @@ function updateTheme() {
         <select 
           bind:value={theme}
           on:change={(e) => setSeasonTheme(e.target.value)}
-          class="text-sm px-2 py-1 rounded border dark:text-gray-800 fill-emerald-50
+          class="text-sm px-2 py-1 rounded border hover:bg-slate-100 dark:hover:bg-slate-300
+          dark:text-gray-800 dark:bg-gray-200
           winter:border-winter-secondary
           spring:border-spring-secondary
           summer:border-summer-secondary
           autumn:border-autumn-secondary
-          dark:winter:bg-winter-accent
-          dark:spring:bg-spring-accent
-          dark:summer:bg-summer-accent
-          dark:autumn:bg-autumn-accent
-          dark:winter:border-winter-dark
-          dark:spring:border-spring-dark
-          dark:summer:border-summer-dark
-          dark:autumn:border-autumn-dark"
+          dark:winter:border-winter-accent
+          dark:spring:border-spring-accent
+          dark:summer:border-summer-accent
+          dark:autumn:border-autumn-accent"
         >
           {#each themes as season}
             <option value={season}>{season.charAt(0).toUpperCase() + season.slice(1)}</option>
