@@ -2,9 +2,6 @@
   import '../app.css';
   import '../lib/i18n';
   import { waitLocale } from 'svelte-i18n';
-
-  export const prerender = true;
-  export const trailingSlash = 'always';
 </script>
 
 {#await waitLocale()}
