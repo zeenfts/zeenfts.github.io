@@ -52,7 +52,7 @@
     <h1 class="text-4xl font-bold">Theme Test Page - Tailwind CSS 3.4+</h1>
     
     <!-- Theme Controls -->
-    <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-800">
+    <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-800 sticky top-0 z-10">
       <h2 class="text-2xl font-semibold mb-4">Theme Controls</h2>
       
       <div class="grid grid-cols-2 gap-4 mb-4">
@@ -105,6 +105,7 @@
               <div class="bg-winter-primary p-4 rounded border">bg-winter-primary</div>
               <div class="bg-winter-secondary p-4 rounded border">bg-winter-secondary</div>
               <div class="bg-winter-accent text-white p-4 rounded">bg-winter-accent</div>
+              <div class="bg-winter-dark text-white p-4 rounded">bg-winter-dark</div>
             </div>
           </div>
 
