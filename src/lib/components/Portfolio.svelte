@@ -3,23 +3,23 @@
   
   const projects = [
     {
-      title: 'Vast Data AI Vault Quest',
-      description: 'An interactive text-based adventure game inspired by Elmwood Trail',
-      tech: ['JavaScript', 'Svelte', 'TailwindCSS'],
-      link: '#',
+      title: 'Customer Lifetime Value Prediction',
+      description: 'This project involves predicting the lifetime value of customers in the luxury car market using machine learning techniques. It covers data preprocessing, model training, and evaluation.',
+      tech: ['Python', 'Regression', 'CLV', 'Machine Learning'],
+      link: 'https://github.com/zeenfts/luxury-cars-insurance-clv-regression',
       featured: true
     },
     {
-      title: 'Project Two',
-      description: 'Description of your second project',
-      tech: ['Node.js', 'Express', 'PostgreSQL'],
-      link: '#'
+      title: 'Animal Images Classification',
+      description: 'A project focused on classifying images of animals using deep learning techniques. It includes data augmentation, model training, and performance evaluation.',
+      tech: ['Deep Learning', 'Image Classification', 'Python'],
+      link: 'https://github.com/zeenfts/animals-detection-cnn/blob/main/images_classif.ipynb'
     },
     {
-      title: 'Project Three',
-      description: 'Description of your third project',
-      tech: ['React', 'TypeScript', 'GraphQL'],
-      link: '#'
+      title: 'Dashboard Visualization',
+      description: 'This project showcases the creation of interactive dashboards using Tableau to visualize data insights. It includes various datasets and visualizations to help understand trends and patterns.',
+      tech: ['Tableau', 'Data Visualization', 'Dashboard'],
+      link: 'https://public.tableau.com/app/profile/difagama/vizzes'
     }
   ];
 </script>
@@ -32,7 +32,11 @@
       {#each projects as project}
         <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
           <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">{project.title}</h3>
+            <h3 class="text-xl font-semibold mb-2">
+              <a href={project.link} class="hover:text-autumn-accent transition-colors" target="_blank">
+                {project.title}
+              </a>
+            </h3>
             <p class="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
             
             <div class="flex flex-wrap gap-2 mb-4">
@@ -46,6 +50,7 @@
             <a 
               href={project.link} 
               class="inline-flex items-center text-autumn-accent hover:text-autumn-dark transition-colors"
+              target="_blank"
             >
               View Project
               <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
