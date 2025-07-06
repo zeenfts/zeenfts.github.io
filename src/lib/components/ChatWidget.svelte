@@ -100,7 +100,12 @@
           />
           <button
             type="submit"
-            class="px-4 py-2 bg-summer-accent text-white rounded-lg hover:bg-summer-dark transition-colors"
+            class="px-4 py-2
+            winter:bg-winter-accent winter:hover:bg-winter-dark
+            spring:bg-spring-accent spring:hover:bg-spring-dark
+            summer:bg-summer-accent summer:hover:bg-summer-dark
+            autumn:bg-autumn-accent autumn:hover:bg-autumn-dark
+            text-white rounded-lg transition-colors"
           >
             Send
           </button>
