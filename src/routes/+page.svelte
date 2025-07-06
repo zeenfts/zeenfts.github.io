@@ -1,8 +1,8 @@
 <script>
-  import { page } from '$app/stores';
-  import { _ } from 'svelte-i18n';
+  // import { page } from '$app/stores';
   import { locale } from 'svelte-i18n';
-  import { getAllContexts } from 'svelte';
+  import { metaTags } from '$lib/stores/meta';
+  // import { getAllContexts } from 'svelte';
 
   import Navbar from '$lib/components/Navbar.svelte';
   import Hero from '$lib/components/Hero.svelte';
@@ -34,13 +34,23 @@
   <title>{$locale === 'id' ? 'Difagama - Spesialis AI & Data' : 'Difagama - AI & Data Specialist'}</title>
   <meta name="description" content={metaDescription} />
   <meta name="keywords" content={metaKeywords} />
-  <link rel="canonical" href={$_('all.myurl')} />
+  <meta name="author" content="Difagama" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href={$metaTags.url} />
   
   <!-- Open Graph -->
-  <meta property="og:title" content="Difagama - Portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={$locale === 'id' ? "Difagama - Spesialis AI & Data" : "Difagama - AI & Data Specialist"} />
   <meta property="og:description" content={metaDescription} />
-  <meta property="og:image" content="{$_('all.myurl')}/og-image.png" />
-  <meta property="og:url" content="{$_('all.myurl')}" />
+  <meta property="og:image" content={$metaTags.image} />
+  <meta property="og:url" content={$metaTags.url} />
+  
+  <!-- X (Twitter) -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content={$locale === 'id' ? "Difagama - Spesialis AI & Data" : "Difagama - AI & Data Specialist"} />
+  <meta property="twitter:description" content={metaDescription} />
+  <meta property="twitter:image" content={$metaTags.image} />
+  <meta property="twitter:url" content={$metaTags.url} />
 
   {@html `
     <script type="application/ld+json">
@@ -48,9 +58,9 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Difagama",
-      "url": ${$_('all.myurl')},
-      "jobTitle": "AI & Data Specialist",
-      "description": "${metaDescription}",
+      "url": ${metaTags.url},
+      "jobTitle": ${metaTags.title},
+      "description": ${metaDescription},
       "sameAs": [
         "https://github.com/zeenfts",
         "https://linkedin.com/in/difagama",
