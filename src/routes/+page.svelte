@@ -16,7 +16,12 @@
   <meta name="description" content="A Human. Love to Nurture Data behind so called AI." />
 </svelte:head>
 
-<div class="min-h-screen bg-winter-primary dark:bg-winter-dark text-gray-900 dark:text-gray-100">
+<div class="min-h-screen
+winter:bg-winter-primary dark:winter:bg-winter-dark
+spring:bg-spring-primary dark:spring:bg-spring-dark
+summer:bg-summer-primary dark:summer:bg-summer-dark
+autumn:bg-autumn-primary dark:autumn:bg-autumn-dark
+text-gray-900 dark:text-gray-100">
   <Navbar />
   <main>
     <Hero />
