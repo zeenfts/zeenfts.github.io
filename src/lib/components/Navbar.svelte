@@ -95,7 +95,11 @@ function updateTheme() {
           <a 
             href={item.href} 
             on:click={(e) => scrollToSection(e, item.href)}
-            class="hover:text-spring-accent transition-colors"
+            class="winter:hover:text-winter-accent
+            spring:hover:text-spring-accent
+            summer:hover:text-summer-accent
+            autumn:hover:text-autumn-accent
+            transition-colors"
           >
             {$_(item.label) || item.label}
           </a>
@@ -108,7 +112,19 @@ function updateTheme() {
         <select 
           bind:value={theme}
           on:change={(e) => setSeasonTheme(e.target.value)}
-          class="text-sm px-2 py-1 rounded border dark:bg-gray-800 dark:border-gray-700"
+          class="text-sm px-2 py-1 rounded border dark:text-gray-800 fill-emerald-50
+          winter:border-winter-secondary
+          spring:border-spring-secondary
+          summer:border-summer-secondary
+          autumn:border-autumn-secondary
+          dark:winter:bg-winter-accent
+          dark:spring:bg-spring-accent
+          dark:summer:bg-summer-accent
+          dark:autumn:bg-autumn-accent
+          dark:winter:border-winter-dark
+          dark:spring:border-spring-dark
+          dark:summer:border-summer-dark
+          dark:autumn:border-autumn-dark"
         >
           {#each themes as season}
             <option value={season}>{season.charAt(0).toUpperCase() + season.slice(1)}</option>
@@ -139,7 +155,7 @@ function updateTheme() {
               on:click={() => changeLanguage(lang.code)}
               class={`px-2 py-1 text-sm rounded ${
                 currentLang === lang.code 
-                  ? 'bg-spring-accent text-white' 
+                  ? 'winter:bg-winter-accent spring:bg-spring-accent summer:bg-summer-accent autumn:bg-autumn-accent text-white' 
                   : 'hover:bg-gray-100 dark:hover:bg-gray-700'
               }`}
             >
