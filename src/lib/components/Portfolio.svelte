@@ -20,7 +20,25 @@
       description: 'This project showcases the creation of interactive dashboards using Tableau to visualize data insights. It includes various datasets and visualizations to help understand trends and patterns.',
       tech: ['Tableau', 'Data Visualization', 'Dashboard'],
       link: 'https://public.tableau.com/app/profile/difagama/vizzes'
-    }
+    },
+    {
+      title: 'Wikipedia TV Show Dataset Scrapping',
+      description: 'This project involves scraping data from Wikipedia about the popular Korean TV show "Running Man". It includes extracting information such as episode details, cast, and show history.',
+      tech: ['Web Scraping', 'Kaggle', 'Python', 'BeautifulSoup'],
+      link: 'https://www.kaggle.com/datasets/zeeniye/running-man-korean-show-wikipedia?datasetId=2675709'
+    },
+    {
+      title: 'Bitcoin Price Stream using Kafka Schema Registry as Avro Format',
+      description: 'This project demonstrates the use of Kafka Schema Registry to stream Bitcoin price data in Avro format. It includes setting up Kafka, creating schemas, and processing data streams.',
+      tech: ['Kafka', 'Avro', 'Schema Registry', 'Python'],
+      link: 'https://github.com/zeenfts/avro-schema-kafka'
+    },
+    {
+      title: 'Superheroes Figures Recommendation System',
+      description: 'A recommendation system for superhero figures based on user preferences and historical data. It uses collaborative filtering techniques to suggest figures that users might like.',
+      tech: ['Superheroes', 'Recommendation System', 'Collaborative Filtering', 'Python'],
+      link: 'https://github.com/zeenfts/superheroes-figures-recommendation/blob/main/figures-recommend-report.md'
+    },
   ];
 </script>
 
